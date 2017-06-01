@@ -1,0 +1,21 @@
+.rates {
+  background-color: $gray;
+}
+.rates__headers {
+  background-color: $dark-blue;
+}
+.rates__name {
+  font-family: "OpenSansBold";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $white;
+}
+.rates__price {
+  font-family: "OpenSansLight";
+  font-size: 24px;
+}
+.rates__item {
+  font-family: "OpenSansRegular";
+  font-size: 14px;
+  text-transform: uppercase;
+}
