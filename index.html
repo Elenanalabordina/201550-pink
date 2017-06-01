@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -15,13 +17,14 @@
         <button class="main-menu__toggle" type="button" name="hamburger">Открыть меню</button>
         <div class="main-menu__wrapper">
           <ul class="main-menu__items">
-            <li class="main-menu__item"><a class="main-menu__item-title" href="#">Главная</a></li>
-            <li class="main-menu__item"><a class="main-menu__item-title" href="#">Фотографии</a></li>
-            <li class="main-menu__item"><a class="main-menu__item-title" href="#">Конкурс</a></li>
+            <li class="main-menu__item"><a class="main-menu__item-title" href="index.html">Главная</a></li>
+            <li class="main-menu__item"><a class="main-menu__item-title" href="photo.html">Фотографии</a></li>
+            <li class="main-menu__item"><a class="main-menu__item-title" href="form.html">Конкурс</a></li>
             <li class="main-menu__item"><a class="main-menu__item-title" href="#">HTML ACADEMY</a></li>
           </ul>
         </div>
       </nav>
+      <img class="page-header__photo" src="img/iphone-hand-mobile@1x.png">
     </header>
     <main>
       <section class="promo-block">
@@ -50,7 +53,7 @@
             <p class="advantages__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых<p>
           </li>
         </ul>
-        <img src="" alt="">
+        <img class="advantages__photo" src="img/iphone-screen-mobile@1x.png" alt="">
       </section>
       <div class="">
         <h2 class="">Эффект на 24 часа!</h2>
@@ -72,26 +75,26 @@
       </section>
       <section class="rates">
         <table>
-          <tr>
+          <tr class="rates__headers">
             <th></th>
-            <th>База 1,99 USD</th>
-            <th>Стандарт 3,99 USD</th>
-            <th>Анлим 9,99 USD</th>
+            <th class="rates__name">База <span class="rates__price">1,99 USD</span></th>
+            <th class="rates__name">Стандарт <span class="rates__price">3,99 USD</span></th>
+            <th class="rates__name">Анлим <span class="rates__price">9,99 USD</span></th>
           </tr>
           <tr>
-            <td>Розовый фильтр</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Смайлики</td>
+            <td class="rates__item">Розовый фильтр</td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>Комментарии</td>
+            <td class="rates__item">Смайлики</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="rates__item">Комментарии</td>
             <td></td>
             <td></td>
             <td></td>
@@ -117,7 +120,7 @@
         </div>
         <div class="contacts__map"></div>
       </section>
-    </main>
+    </mai>n
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a href="index.html" class="page-footer__logo"></a>
