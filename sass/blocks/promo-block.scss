@@ -1,0 +1,10 @@
+.promo-block {
+  background-color: $dark-blue;
+}
+.promo-block__icons {
+  @include list;
+}
+.promo-block__text {
+  font-family: "OpenSansLight";
+  color: $white;
+}

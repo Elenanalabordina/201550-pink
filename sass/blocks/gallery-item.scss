@@ -1,0 +1,22 @@
+.gallery-item__name {
+  font-family: "OpenSansBold";
+}
+ .gallery-item__time {
+  font-family: "OpenSansLight";
+  text-transform: uppercase;
+ }
+ .gallery-item__comment {
+  font-family: "OpenSansRegular";
+}
+.gallery-item__like {
+  font-family: "OpenSansRegular";
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $pink;
+}
+.gallery-item__inscription {
+  font-family: "OpenSansBold";
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $white;
+}
