@@ -1,6 +1,84 @@
+.form {
+
+}
 .form__title {
   font-family: "OpenSansRegular";
   color: $pink;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
+}
+.form__title--info {
+  display: none;
+}
+.form__group {
+  @include container;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 44px;
+}
+.form__wrapper {
+  @include container;
+}
+.form__group--achievements {
+  width: auto;
+  background-color: $gray;
+}
+.form__group--type {
+  width: auto;
+  background-color: $gray;
+}
+::placeholder {
+  color: $dark-blue;
+}
+
+@media ($tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__group--type {
+      order: 1;
+      background-color: $white;
+  }
+  .form__group--phone {
+      order: 2;
+  }
+  .form__group--achievements {
+      order: 3;
+      background-color: $white;
+  }
+  .form__group--comment {
+      order: 4;
+  }
+  .form__wrapper-info {
+    order: 5;
+  }
+  .form__group {
+    border: 2px solid $light-gray;
+    padding-left: 62px;
+  }
+  .form__group--info {
+      order: 0;
+      border: none;
+      padding-left: 0;
+  }
+  .form__title--info {
+    display: block;
+  }
+  .form__title {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+@media ($desktop-width) {
+  .form__group--info {
+    width: 470px;
+    margin: 0;
+  }
+  .form__group--type {
+    width: 435px;
+    margin: 0;
+  }
 }

@@ -1,0 +1,37 @@
+.research {
+  display: none;
+}
+
+@media ($tablet-width) {
+  .research {
+    display: block;
+    @include container;
+    padding-left: 363px;
+  }
+  .research__title {
+    font-family: "OpenSansBold";
+    font-size: 30px;
+    width: 180px;
+  }
+  .research__text {
+    width: 293px;
+  }
+  .research a {
+    color: $pink;
+  }
+}
+
+@media ($desktop-width) {
+  .research {
+    background-color: $gray;
+    padding-left: 500px;
+    padding-bottom: 50px;
+  }
+  .research__text {
+    font-size: 18px;
+    width: 484px;
+  }
+  .research a {
+    font-size: 18px;
+  }
+}

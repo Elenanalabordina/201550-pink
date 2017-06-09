@@ -13,14 +13,14 @@
           <img src="" alt="Pink">
         </a>
       </div>
-      <nav class="main-menu main-menu--closed">
+      <nav class="main-menu main-menu--closed main-menu--nojs">
         <button class="main-menu__toggle" type="button" name="hamburger">Открыть меню</button>
         <div class="main-menu__wrapper">
           <ul class="main-menu__items">
             <li class="main-menu__item"><a class="main-menu__item-title" href="index.html">Главная</a></li>
             <li class="main-menu__item"><a class="main-menu__item-title" href="photo.html">Фотографии</a></li>
             <li class="main-menu__item"><a class="main-menu__item-title" href="#">Конкурс</a></li>
-            <li class="main-menu__item"><a class="main-menu__item-title" href="#">HTML ACADEMY</a></li>
+            <li class="main-menu__item"><a class="main-menu__item-title" href="#">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -47,35 +47,37 @@
         </fieldset>
         <fieldset class="form__group form__group--achievements">
           <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
-          <div class="form-achievements">
-            <label class="form-achievements__label" for="selfie">Сделал селфи с акулой
-              <input class="form-achievements__input" type="checkbox" name="selfie" id="selfie" checked>
-              <span class="form-achievements__icon"></span>
-            </label>
-            <label class="form-achievements__label" for="beach">Обгорел на пляже
-              <input class="form-achievements__input" type="checkbox" name="beach" id="beach" checked>
-              <span class="form-achievements__icon"></span>
-            </label>
-            <label class="form-achievements__label" for="chuck">Видел Чака Норриса
-              <input class="form-achievements__input" type="checkbox" name="chuck" id="chuck">
-              <span class="form-achievements__icon"></span>
-            </label>
-            <label class="form-achievements__label" for="souvenir">Накупил сувениров
-              <input class="form-achievements__input" type="checkbox" name="souvenir" id="souvenir">
-              <span class="form-achievements__icon"></span>
-            </label>
-            <label class="form-achievements__label" for="tower">Удержал башню
-              <input class="form-achievements__input" type="checkbox" name="tower" id="tower" checked>
-              <span class="form-achievements__icon"></span>
-            </label>
-            <label class="form-achievements__label" for="hotel">Разгромил отель
-              <input class="form-achievements__input" type="checkbox" name="hotel" id="hotel">
-              <span class="form-achievements__icon"></span>
-            </label>
+          <div class="form__wrapper">
+            <div class="form-achievements">
+              <label class="form-achievements__label" for="selfie">Сделал селфи с акулой
+                <input class="form-achievements__input" type="checkbox" name="selfie" id="selfie" checked>
+                <span class="form-achievements__icon"></span>
+              </label>
+              <label class="form-achievements__label" for="beach">Обгорел на пляже
+                <input class="form-achievements__input" type="checkbox" name="beach" id="beach" checked>
+                <span class="form-achievements__icon"></span>
+              </label>
+              <label class="form-achievements__label" for="chuck">Видел Чака Норриса
+                <input class="form-achievements__input" type="checkbox" name="chuck" id="chuck">
+                <span class="form-achievements__icon"></span>
+              </label>
+              <label class="form-achievements__label" for="souvenir">Накупил сувениров
+                <input class="form-achievements__input" type="checkbox" name="souvenir" id="souvenir">
+                <span class="form-achievements__icon"></span>
+              </label>
+              <label class="form-achievements__label" for="tower">Удержал башню
+                <input class="form-achievements__input" type="checkbox" name="tower" id="tower" checked>
+                <span class="form-achievements__icon"></span>
+              </label>
+              <label class="form-achievements__label" for="hotel">Разгромил отель
+                <input class="form-achievements__input" type="checkbox" name="hotel" id="hotel">
+                <span class="form-achievements__icon"></span>
+              </label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__group form__group--phone">
-          <legend class="form__title">Контактная информация</legend>
+          <legend class="form__title form__title--info">Контактная информация</legend>
           <div class="form-phone">
             <label class="form-phone__label" for="phone">Номер телефона</label>
             <input class="form-phone__input-field" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста" required>
@@ -89,25 +91,27 @@
         </fieldset>
         <fieldset class="form__group form__group--type">
           <legend class="form__title">С каким приложение путешествовали?</legend>
-          <div class="form-type">
-            <label class="form-type__label" for="ios">Pink для iOS
-              <input class="form-type__input" type="radio" name="ios" id="ios" checked>
-              <span class="form-type__icon"></span>
-            </label>
-            <label class="form-type__label" for="android">Pink на Android
-              <input class="form-type__input" type="radio" name="android" id="android">
-              <span class="form-type__icon"></span>
-            </label>
-            <label class="form-type__label" for="wihdows">Windows Phone
-              <input class="form-type__input" type="radio" name="windows" id="windows">
-              <span class="form-type__icon"></span>
-            </label>
+          <div class="form__wrapper">
+            <div class="form-type">
+              <label class="form-type__label" for="ios">Pink для iOS
+                <input class="form-type__input" type="radio" name="ios" id="ios" checked>
+                <span class="form-type__icon"></span>
+              </label>
+              <label class="form-type__label" for="android">Pink на Android
+                <input class="form-type__input" type="radio" name="android" id="android">
+                <span class="form-type__icon"></span>
+              </label>
+              <label class="form-type__label" for="wihdows">Windows Phone
+                <input class="form-type__input" type="radio" name="windows" id="windows">
+                <span class="form-type__icon"></span>
+              </label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__group form__group--comment">
           <legend class="form__title">Опишите свои эмоции</legend>
           <div class="form-comment">
-            <textarea class="form__comment-field" name="comment" id="comment-field" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="form-comment__field" name="comment" id="comment-field" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
         </fieldset>
         <div class="form__wrapper-info">
@@ -129,5 +133,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-menu');
+      var navToggle = document.querySelector('.main-menu__toggle');
+
+      navMain.classList.remove('main-menu--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-menu--closed')) {
+          navMain.classList.remove('main-menu--closed');
+          navMain.classList.add('main-menu--opened');
+        } else {
+          navMain.classList.add('main-menu--closed');
+          navMain.classList.remove('main-menu--opened');
+        }
+      });
+    </script>
   </body>
 </html>

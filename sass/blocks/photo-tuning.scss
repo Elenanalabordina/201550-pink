@@ -1,3 +1,7 @@
 .photo-tuning {
-
+  background-color: $gray;
+  padding-top: 20px;
+}
+.photo-tuning__wrapper {
+  @include container;
 }

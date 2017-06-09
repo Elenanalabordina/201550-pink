@@ -1,6 +1,26 @@
+.page-header {
+  background-color: $dark-blue;
+}
 .page-header__title {
   font-family: "OpenSansLight";
   font-size: 24px;
   color: $white;
   background-color: $dark-blue;
+}
+.page-header__logo {
+  display: block;
+}
+.page-header__container {
+  background-color: $dark-blue;
+  min-height: 68px;
+}
+
+@media ($desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: center;
+  }
+  .page-header__logo {
+    width: 260px;
+  }
 }

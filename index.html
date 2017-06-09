@@ -20,50 +20,57 @@
             <li class="main-menu__item"><a class="main-menu__item-title" href="#">Главная</a></li>
             <li class="main-menu__item"><a class="main-menu__item-title" href="photo.html">Фотографии</a></li>
             <li class="main-menu__item"><a class="main-menu__item-title" href="form.html">Конкурс</a></li>
-            <li class="main-menu__item"><a class="main-menu__item-title" href="#">HTML ACADEMY</a></li>
+            <li class="main-menu__item"><a class="main-menu__item-title" href="#">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
-      <img class="page-header__photo" src="img/iphone-hand-mobile@1x.png">
     </header>
     <main>
       <section class="promo-block">
-        <a class="button promo-block__btn" href="#">Скачать приложение</a>
-        <ul class="promo-block__icons">
-          <li class="promo-block__icon"><a href="#">Apple</a></li>
-          <li class="promo-block__icon"><a href="#">Android</a></li>
-          <li class="promo-block__icon"><a href="#">Windows</a></li>
-        </ul>
-        <p class="promo-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="promo-block__wrapper">
+          <img class="promo-block__photo" src="img/iphone-hand-mobile@1x.png">
+          <p class="promo-block__tagline">Взгляните на жизнь иначе!</p>
+          <a class="button promo-block__btn" href="#">Скачать приложение</a>
+          <ul class="promo-block__icons">
+            <li class="promo-block__icon"><a href="#">Apple</a></li>
+            <li class="promo-block__icon"><a href="#">Android</a></li>
+            <li class="promo-block__icon"><a href="#">Windows</a></li>
+          </ul>
+          <p class="promo-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
       <section class="advantages">
         <p class="advantages__text">Устали от серости мегаполиса?</p>
         <p class="advantages__text">Нам есть, что вам предложить!</p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h2 class="advantages__item-title">Поднимает настроение</h2>
-            <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!<p>
-          </li>
-          <li class="advantages__item">
-            <h2 class="advantages__item-title">Меняет мир вокруг</h2>
-            <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект<p>
-          </li>
-          <li class="advantages__item">
-            <h2 class="advantages__item-title">Заводит новых друзей</h2>
-            <p class="advantages__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых<p>
-          </li>
-        </ul>
-        <img class="advantages__photo" src="img/iphone-screen-mobile@1x.png" alt="">
+        <div class="advantages__background">
+          <div class="advantages__wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h2 class="advantages__item-title">Поднимает настроение</h2>
+                <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!<p>
+              </li>
+              <li class="advantages__item">
+                <h2 class="advantages__item-title">Меняет мир вокруг</h2>
+                <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект<p>
+              </li>
+              <li class="advantages__item">
+                <h2 class="advantages__item-title">Заводит новых друзей</h2>
+                <p class="advantages__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых<p>
+              </li>
+            </ul>
+            <img class="advantages__photo" src="img/iphone-screen-mobile@1x.png" alt="">
+          </div>
+        </div>
       </section>
-      <div class="">
-        <h2 class="">Эффект на 24 часа!</h2>
-        <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+      <div class="research">
+        <h2 class="research__title">Эффект на 24 часа!</h2>
+        <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a href="#">Узнать больше об исследовании</a>
       </div>
       <section class="rewiews">
         <div class="rewiews__wrapper">
-          <span class="rewiews__name">Николай Петров</span>
           <span class="rewiews__info">25 лет, водитель трамвая</span>
+          <span class="rewiews__name">Николай Петров</span>
           <blockquote>
             <p class="rewiews__block">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </blockquote>
@@ -105,15 +112,15 @@
         <p class="contacts__text">Остались вопросы?</p>
         <p class="contacts__text">Свяжитесь с нами!</p>
         <div class="contacts-table">
-          <div class="contacts-table__column1">
+          <div class="contacts-table__column">
             <div class="contacts-table__name">Звоните:</div>
             <div class="contacts-table__value">+7 (812) 555+66-66</div>
           </div>
-          <div class="contacts-table__column2">
+          <div class="contacts-table__column">
             <div class="contacts-table__name">Пишите:</div>
             <div class="contacts-table__value">mail@htmlacademy.ru</div>
           </div>
-          <div class="contacts-table__column3">
+          <div class="contacts-table__column">
             <div class="contacts-table__name">Приезжайте в гости:</div>
             <div class="contacts-table__value">ул. Большая Конюшенная, д. 19/8,</div>
           </div>
@@ -134,5 +141,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-menu');
+      var navToggle = document.querySelector('.main-menu__toggle');
+
+      navMain.classList.remove('main-menu--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-menu--closed')) {
+          navMain.classList.remove('main-menu--closed');
+          navMain.classList.add('main-menu--opened');
+        } else {
+          navMain.classList.add('main-menu--closed');
+          navMain.classList.remove('main-menu--opened');
+        }
+      });
+    </script>
   </body>
 </html>

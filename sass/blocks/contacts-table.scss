@@ -7,3 +7,26 @@
   font-size: 24px;
   color: $pink;
 }
+.contacts-table {
+  text-align: center;
+}
+
+@media ($tablet-width) {
+  .contacts-table {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacts-table__column {
+    min-width: 300px;
+  }
+  .contacts-table__column:last-child {
+    padding-left: 100px;
+    min-width: 212px;
+  }
+}
+
+@media ($desktop-width) {
+  .contacts-table {
+    flex-wrap: nowrap;
+  }
+}

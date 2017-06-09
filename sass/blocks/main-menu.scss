@@ -1,15 +1,128 @@
 .main-menu {
-  background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0;
-  height: 464px;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
 }
 .main-menu__items {
   @include list;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.main-menu__item {
+  background-color: $dark-blue;
+  opacity: 1;
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
+  text-align: center;
+  border-bottom: 1px solid $blue;
 }
 .main-menu__item-title {
   font-family: "OpenSansBold";
   font-size: 18px;
   text-transform: uppercase;
   color: $white;
-  background-color: $dark-blue;
   @include link;
+}
+.main-menu__item a[href] {
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $dark-pink;
+  }
+}
+.main-menu__toggle {
+  position: absolute;
+  top: -64px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 54px;
+  height: 25px;
+  font-size: 0;
+  background-color: $dark-blue;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.main-menu--closed .main-menu__toggle::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+
+  width: 50px;
+  height: 3px;
+
+  background-color: $white;
+  box-shadow: 0 8px 0 0 $white,
+              0 16px 0 0 $white;
+
+}
+.main-menu--opened .main-menu__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 7px;
+    width: 30px;
+    height: 4px;
+
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media ($mobile-desktop-widths-only) {
+  .main-menu--closed .main-menu__item {
+    display: none;
+  }
+  .main-menu--opened .main-menu__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .main-menu--nojs .main-menu__toggle {
+    display: none;
+  }
+}
+@media ($tablet-width) {
+  .main-menu {
+    width: auto;
+    margin: 0 ;
+  }
+}
+
+@media ($desktop-width) {
+  .main-menu {
+
+  }
+  .main-menu__items {
+    flex-direction: row;
+  }
+  .main-menu--closed .main-menu__toggle::before,
+  .main-menu--opened .main-menu__toggle {
+    display: none;
+  }
+  .main-menu__item {
+    border-bottom: 0;
+  }
+  .main-menu__item-title {
+    font-family: "OpenSansRegular";
+    text-transform: none;
+  }
 }
