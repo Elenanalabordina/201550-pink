@@ -2,7 +2,41 @@
   font-family: "OpenSansBold";
   font-size: 18px;
   color: $black;
+  text-align: center;
+  display: block;
 }
 .rewiews__block {
   font-family: "OpenSansRegular";
+  text-align: center;
 }
+.rewiews__wrapper {
+  @include container;
+}
+.rewiews__info {
+  display: none;
+}
+blockquote {
+  margin: 0;
+}
+
+@media ($tablet-width) {
+  .rewiews__info {
+    display: block;
+    text-align: center;
+  }
+  .rewiews__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .rewiews__block {
+    font-size: 18px;
+  }
+}
+
+@media ($desktop-width) {
+  .rewiews__block {
+    width: 688px;
+    margin: 0 auto;
+  }
+}
+

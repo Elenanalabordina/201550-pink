@@ -1,4 +1,21 @@
 .contacts__text {
   font-family: "OpenSansLight";
   font-size: 24px;
+  text-align: center;
 }
+.contacts {
+  @include container;
+}
+
+@media ($tablet-width) {
+  .contacts__text {
+    font-size: 40px;
+  }
+}
+
+@media ($desktop-width) {
+  .contacts__text {
+    font-size: 50px;
+  }
+}
+

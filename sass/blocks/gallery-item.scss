@@ -1,22 +1,44 @@
+.gallery-item {
+  @include container;
+  background-color: $gray;
+  margin-bottom: 20px;
+}
 .gallery-item__name {
   font-family: "OpenSansBold";
+  font-size: 14px;
+  display: inline-block;
+  padding-left: 18px;
 }
-.gallery-item__time {
+ .gallery-item__time {
   font-family: "OpenSansLight";
+  font-size: 12px;
   text-transform: uppercase;
-}
-.gallery-item__comment {
+ }
+ .gallery-item__comment {
   font-family: "OpenSansRegular";
+  padding-left: 18px;
 }
 .gallery-item__like {
   font-family: "OpenSansRegular";
   font-size: 12px;
   text-transform: uppercase;
   color: $pink;
+  padding-left: 18px;
 }
 .gallery-item__inscription {
   font-family: "OpenSansBold";
   font-size: 12px;
   text-transform: uppercase;
   color: $white;
+}
+@media ($tablet-width) {
+  .gallery-item {
+    width: 290px;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  .gallery-item:first-child {
+    width: auto;
+    margin-right: 0;
+  }
 }

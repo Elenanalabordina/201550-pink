@@ -1,0 +1,10 @@
+.gallery-items {
+  display: block;
+}
+@media ($tablet-width) {
+  .gallery-items {
+    @include container;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
