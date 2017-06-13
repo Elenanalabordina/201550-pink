@@ -1,5 +1,8 @@
 .promo-block {
-  background-image: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0;
+  width: 100%;
+  background-image: url("img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -9px;
   height: 464px;
   background-color: $dark-blue;
 }
@@ -21,15 +24,9 @@
   line-height: 25px;
 }
 .promo-block__btn {
-  font-size: 18px;
-  font-family: "OpenSansBold";
   color: $white;
-  display: block;
-  text-align: center;
   border: 2px solid $white;
   border-radius: 30px;
-  box-sizing: border-box;
-  padding: 10px 0;
 
   &:hover {
     color: $pink;

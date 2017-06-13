@@ -10,7 +10,7 @@
     <header class="page-header">
       <div class="page-header__container">
         <a class="page-header__logo" href="index.html">
-          <img src="" alt="Pink">
+          <img src="img/logo-pink-white-mobile.svg" width="80" height="66" alt="Pink">
         </a>
       </div>
       <nav class="main-menu main-menu--closed main-menu--nojs">
@@ -24,20 +24,24 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main>
-      <p>Поделись своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
+      <div class="wrapper">
+        <h1 class="wrapper__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+      <div class="form-text">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!<span class="form-text__tablet">Пожалуйста, заполните форму ниже:</span></p>
+      </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__group form__group--info">
           <div class="form-info">
             <div class="form-info__wrapper">
               <label class="form-info__label" for="surname">Фамилия:</label>
-              <input class="form-info__input-field" type="text" placeholder="Укажите фамилию*" id="surname">
+              <input class="form-info__input-field" type="text" placeholder="Укажите фамилию *" id="surname">
             </div>
             <div class="form-info__wrapper">
               <label class="form-info__label" for="name">Имя:</label>
-              <input class="form-info__input-field" type="text" placeholder="Введите ваше имя*" id="name">
+              <input class="form-info__input-field form-info__input-field--name" type="text" placeholder="Введите ваше имя *" id="name">
             </div>
             <div class="form-info__wrapper">
               <label class="form-info__label" for="patronymic">Отчество:</label>
@@ -84,13 +88,13 @@
             <span class="form-phone__icon"></span>
           </div>
           <div class="form-mail">
-            <label class="form-mail__label" for="mail">Адрес почты</label>
+            <label class="form-mail__label" for="mail">Адресок почты</label>
             <input class="form-mail__input-field" type="email" name="mail" id="mail" placeholder="Введите почту*" required>
             <span class="form-mail__icon"></span>
           </div>
         </fieldset>
         <fieldset class="form__group form__group--type">
-          <legend class="form__title">С каким приложение путешествовали?</legend>
+          <legend class="form__title">С каким приложением путешествовали?</legend>
           <div class="form__wrapper">
             <div class="form-type">
               <label class="form-type__label" for="ios">Pink для iOS
@@ -111,25 +115,36 @@
         <fieldset class="form__group form__group--comment">
           <legend class="form__title">Опишите свои эмоции</legend>
           <div class="form-comment">
-            <textarea class="form-comment__field" name="comment" id="comment-field" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="form-comment__field" name="comment" id="comment-field" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
         </fieldset>
         <div class="form__wrapper-info">
           <a href="#" class="button form__btn">Отправить форму</a>
-          <p class="form__info">*&mdash;Обязательные поля</p>
+          <p class="form__info"><span class="form__snow">*</span> &mdash; Обязательные поля</p>
         </div>
       </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a href="index.html" class="page-footer__logo"></a>
+        <a class="page-footer__logo" href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" width="80" height="66" alt="Pink">
+        </a>
         <div class="social-links">
-          <a class="social-links__tw" href="#"></a>
-          <a class="social-links__fb" href="#"></a>
-          <a class="social-links__you" href="#"></a>
+          <a class="social-links__tw" href="#">
+            <img src="img/icon-twitter.svg" width="19" height="14" alt="Twitter">
+          </a>
+          <a class="social-links__fb" href="#">
+            <img src="img/icon-facebook.svg" width="19" height="14" alt="Facebook">
+          </a>
+          <a class="social-links__you" href="#">
+            <img src="img/icon-youtube.svg" width="19" height="14" alt="Youtube">
+          </a>
         </div>
         <div class="copyright">
-          <a class="copyright__title" href="https://htmlacademy.ru"><span class="copyright__title-text">Разработано</span></a>
+          <a class="copyright__title" href="https://htmlacademy.ru">
+            <span class="copyright__title-text">Разработано</span>
+            <img src="img/logo-htmlacademy.svg" width="19" height="14" alt="Htmlacademy">
+          </a>
         </div>
       </div>
     </footer>

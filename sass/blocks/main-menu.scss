@@ -44,6 +44,7 @@
   height: 25px;
   font-size: 0;
   background-color: $dark-blue;
+  opacity: 0.6;
   cursor: pointer;
   border: none;
   outline: none;
@@ -60,6 +61,16 @@
   background-color: $white;
   box-shadow: 0 8px 0 0 $white,
               0 16px 0 0 $white;
+  &:hover {
+    background-color: $pink;
+    box-shadow: 0 8px 0 0 $pink,
+                0 16px 0 0 $pink;
+  }
+  &:active {
+    background-color: #5b324a;
+    box-shadow: 0 8px 0 0 #5b324a,
+                0 16px 0 0 #5b324a;
+  }
 
 }
 .main-menu--opened .main-menu__toggle {
@@ -120,6 +131,7 @@
   }
   .main-menu__item {
     border-bottom: 0;
+    background-color: none;
   }
   .main-menu__item-title {
     font-family: "OpenSansRegular";

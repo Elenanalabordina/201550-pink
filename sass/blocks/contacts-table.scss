@@ -29,4 +29,10 @@
   .contacts-table {
     flex-wrap: nowrap;
   }
+  .contacts-table__column:first-child {
+    order: 0;
+  }
+  .contacts-table__column:nth-child(2) {
+    order: 2;
+  }
 }

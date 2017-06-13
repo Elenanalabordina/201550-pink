@@ -1,0 +1,8 @@
+.button {
+  @include link;
+  font-size: 18px;
+  font-family: "OpenSansBold";
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+}
