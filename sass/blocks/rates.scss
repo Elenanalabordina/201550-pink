@@ -1,6 +1,22 @@
 .rates {
   background-color: $gray;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    display: block;
+    left: -5%;
+    bottom: 374px;
+    transform: rotate(174deg);
+    width: 110%;
+    top: -17px;
+    background-color: white;
+  }
 }
+
 .rates__headers {
   background-color: $dark-blue;
 }
@@ -18,4 +34,10 @@
   font-family: "OpenSansRegular";
   font-size: 14px;
   text-transform: uppercase;
+}
+
+@media ($tablet-width) {
+  .rates__wrapper {
+    @include container;
+  }
 }

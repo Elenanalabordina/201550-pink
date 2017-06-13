@@ -1,7 +1,65 @@
 .photo-tuning {
   background-color: $gray;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 .photo-tuning__wrapper {
   @include container;
+}
+.photo-tuning__btn-post {
+  width: 100%;
+  border-radius: 50px;
+  border: 3px solid $pink;
+  background-color: $gray;
+  color: $pink;
+  outline: none;
+  padding: 10px 0;
+  margin-bottom: 12px;
+
+  &:hover {
+    color: $white;
+    background-color: $pink;
+
+  }
+  &:active {
+    color: #e06989;
+    background-color: $pink;
+  }
+}
+.photo-tuning__btn-annulment {
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid #dddfe0;
+  background-color: $gray;
+  color: #dddfe0;
+  outline: none;
+  padding: 10px 0;
+
+  &:hover {
+    color: $dark-gray;
+    border: 3px solid $dark-gray;
+
+  }
+  &:active {
+    color: #cbced2;
+    background-color: $dark-gray;
+  }
+}
+@media ($tablet-width) {
+  .photo-tuning__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    height: 437px;
+    img {
+      position: absolute;
+      left: 0;
+      top: 36px;
+    }
+  }
+  .photo-tuning__btn-post,
+  .photo-tuning__btn-annulment {
+    width: 260px;
+  }
 }

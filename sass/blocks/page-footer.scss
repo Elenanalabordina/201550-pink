@@ -1,0 +1,16 @@
+.page-footer__wrapper {
+  @include container;
+}
+.page-footer__logo {
+  display: block;
+  text-align: center;
+  height: 82px;
+}
+
+@media ($tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,32 @@
+.wrapper__title {
+  font-family: "OpenSansLight";
+  font-size: 24px;
+  color: $white;
+  background-color: $dark-blue;
+  text-align: center;
+  @include container;
+  padding-top: 30px;
+  padding-bottom: 81px;
+}
+.wrapper {
+  width: 100%;
+  background-image: url("img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -9px;
+  background-color: $dark-blue;
+}
+
+@media ($tablet-width) {
+  .wrapper__title {
+    font-size: 50px;
+    line-height: 59px;
+    padding-top: 73px;
+    padding-bottom: 140px;
+  }
+}
+
+@media ($desktop-width) {
+  .wrapper__title {
+    padding-bottom: 101px;
+  }
+}

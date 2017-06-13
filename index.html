@@ -10,17 +10,13 @@
     <header class="page-header">
       <div class="page-header__container">
         <a class="page-header__logo">
-          <img src="" alt="Pink">
+          <img src="img/logo-pink-white-mobile.svg" width="80" height="66" alt="Pink">
         </a>
       </div>
       <nav class="main-menu main-menu--closed">
         <button class="main-menu__toggle" type="button" name="hamburger">Открыть меню</button>
         <div class="main-menu__wrapper">
           <ul class="main-menu__items">
-            <li class="main-menu__item"><a class="main-menu__item-title" href="#">Главная</a></li>
-            <li class="main-menu__item"><a class="main-menu__item-title" href="photo.html">Фотографии</a></li>
-            <li class="main-menu__item"><a class="main-menu__item-title" href="form.html">Конкурс</a></li>
-            <li class="main-menu__item"><a class="main-menu__item-title" href="#">HTML Academy</a></li>
             <li class="main-menu__item"><a class="main-menu__item-title" href="index.html">Главная</a></li>
             <li class="main-menu__item"><a class="main-menu__item-title" href="photo.html">Фотографии</a></li>
             <li class="main-menu__item"><a class="main-menu__item-title" href="form.html">Конкурс</a></li>
@@ -28,7 +24,6 @@
           </ul>
         </div>
       </nav>
-      <img class="page-header__photo" src="img/iphone-hand-mobile@1x.png">
     </header>
     <main>
       <section class="promo-block">
@@ -37,9 +32,9 @@
           <p class="promo-block__tagline">Взгляните на жизнь иначе!</p>
           <a class="button promo-block__btn" href="#">Скачать приложение</a>
           <ul class="promo-block__icons">
-            <li class="promo-block__icon"><a href="#">Apple</a></li>
-            <li class="promo-block__icon"><a href="#">Android</a></li>
-            <li class="promo-block__icon"><a href="#">Windows</a></li>
+            <li class="promo-block__icon"><a href="#">Apple</a><img src="img/logo-apple.svg" width="45" height="57" alt="Apple"></li>
+            <li class="promo-block__icon"><a href="#">Android</a><img src="img/logo-android.svg" width="42" height="47" alt="Android"></li>
+            <li class="promo-block__icon"><a href="#">Microsoft</a><img src="img/logo-microsoft.svg" width="44" height="42" alt="Microsoft"></li>
           </ul>
           <p class="promo-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -66,21 +61,6 @@
             <img class="advantages__photo" src="img/iphone-screen-mobile@1x.png" alt="">
           </div>
         </div>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h2 class="advantages__item-title">Поднимает настроение</h2>
-            <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!<p>
-          </li>
-          <li class="advantages__item">
-            <h2 class="advantages__item-title">Меняет мир вокруг</h2>
-            <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект<p>
-          </li>
-          <li class="advantages__item">
-            <h2 class="advantages__item-title">Заводит новых друзей</h2>
-            <p class="advantages__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых<p>
-          </li>
-        </ul>
-        <img class="advantages__photo" src="img/iphone-screen-mobile@1x.png" alt="">
       </section>
       <div class="research">
         <h2 class="research__title">Эффект на 24 часа!</h2>
@@ -101,6 +81,7 @@
         </div>
       </section>
       <section class="rates">
+        <div class="rates__wrapper">
         <table>
           <tr class="rates__headers">
             <th></th>
@@ -127,6 +108,7 @@
             <td></td>
           </tr>
         </table>
+        </div>
       </section>
       <section class="contacts">
         <p class="contacts__text">Остались вопросы?</p>
@@ -150,14 +132,25 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a href="index.html" class="page-footer__logo"></a>
+        <a class="page-footer__logo" href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" width="80" height="66" alt="Pink">
+        </a>
         <div class="social-links">
-          <a class="social-links__tw" href="#"></a>
-          <a class="social-links__fb" href="#"></a>
-          <a class="social-links__you" href="#"></a>
+          <a class="social-links__tw" href="#">
+            <img src="img/icon-twitter.svg" width="19" height="14" alt="Twitter">
+          </a>
+          <a class="social-links__fb" href="#">
+            <img src="img/icon-facebook.svg" width="19" height="14" alt="Facebook">
+          </a>
+          <a class="social-links__you" href="#">
+            <img src="img/icon-youtube.svg" width="19" height="14" alt="Youtube">
+          </a>
         </div>
         <div class="copyright">
-          <a class="copyright__title" href="https://htmlacademy.ru"><span class="copyright__title-text">Разработано</span></a>
+          <a class="copyright__title" href="https://htmlacademy.ru">
+            <span class="copyright__title-text">Разработано</span>
+            <img src="img/logo-htmlacademy.svg" width="19" height="14" alt="Htmlacademy">
+          </a>
         </div>
       </div>
     </footer>
