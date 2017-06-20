@@ -56,3 +56,39 @@
     margin-top: -15px;
   }
 }
+
+@media ($desktop-width) {
+  .form-achievements {
+    padding-left: 59px;
+    padding-bottom: 22px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-achievements__label {
+    padding: 14px 52px 10px 61px;
+    margin-bottom: 25px;
+
+    &--order0 {
+      order: 0;
+    }
+    &--order1 {
+      order: 1;
+    }
+    &--order2 {
+      order: 2;
+      padding-right: 0;
+      width: 166px;
+    }
+    &--order3 {
+      order: 3;
+    }
+    &--order4 {
+      order: 4;
+    }
+    &--order5 {
+      order: 5;
+      padding-right: 0;
+      width: 166px;
+    }
+  }
+}

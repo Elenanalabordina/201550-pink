@@ -41,6 +41,7 @@
   transition-duration: 0.2s;
   transform: scale(1);
 }
+
 @media ($tablet-width) {
   .form-type {
     padding-left: 60px;
@@ -50,5 +51,11 @@
   }
   .form-type__icon {
     margin-top: -28px;
+  }
+}
+
+@media ($desktop-width) {
+  .form-type {
+    padding-left: 77px;
   }
 }
