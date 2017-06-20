@@ -25,3 +25,9 @@
     margin-bottom: 36px;
   }
 }
+
+@media ($desktop-width) {
+  .form-comment__field {
+    height: 129px;
+  }
+}

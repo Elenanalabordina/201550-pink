@@ -2,10 +2,3 @@
   display: block;
   position: relative;
 }
-@media ($tablet-width) {
-  .gallery-items {
-    @include container;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}

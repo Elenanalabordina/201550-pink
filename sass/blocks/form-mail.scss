@@ -36,8 +36,32 @@
     padding-left: 60px;
     padding-right: 60px;
     margin-bottom: 22px;
+    position: relative;
   }
   .form-mail__input-field {
     margin-bottom: 10px;
+  }
+  .form-mail__icon {
+    position: absolute;
+    background: url(../img/icon-mail.svg) no-repeat;
+    top: 2px;
+    left: 497px;
+    z-index: 0;
+    background-color: #e5e5e5;
+    width: 61px;
+    height: 59px;
+    background-position: 50%;
+  }
+}
+
+@media ($desktop-width) {
+  .form-mail {
+    width: 375px;
+    float: right;
+    padding-left: 0;
+    margin-bottom: 13px;
+  }
+  .form-mail__icon {
+    left: 312px;
   }
 }

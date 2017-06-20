@@ -1,13 +1,29 @@
 .copyright {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 .copyright__title {
   @include link;
+  fill: #d22856;
+  &:hover {
+    fill: #283645;
+  }
+  &:active {
+    fill: #bec2c7;
+  }
 }
 .copyright__title-text {
   font-family: "OpenSansRegular";
   font-size: 14px;
   color: $gray-text;
+  padding-right: 16px;
+}
+
+@media ($tablet-width) {
+  .copyright {
+    margin-top: 13px;
+  }
 }
 
 @media ($desktop-width) {
