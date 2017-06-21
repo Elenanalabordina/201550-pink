@@ -27,12 +27,12 @@
   margin-bottom: 0;
   padding-top: 6px;
 }
- .gallery-item__time {
+.gallery-item__time {
   font-family: "OpenSansLight";
   font-size: 12px;
   text-transform: uppercase;
- }
- .gallery-item__comment {
+}
+.gallery-item__comment {
   font-family: "OpenSansRegular";
   padding-left: 18px;
   margin-top: -6px;
@@ -169,6 +169,7 @@
   }
   .gallery-item {
     margin-bottom: 52px;
+    width: 300px;
   }
   .gallery-item:nth-child(2n) {
     margin-right: 20px;
@@ -181,5 +182,6 @@
   }
   .gallery-item--panorama {
     margin-bottom: 33px;
+    width: auto;
   }
 }

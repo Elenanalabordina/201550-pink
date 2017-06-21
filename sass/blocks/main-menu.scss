@@ -47,7 +47,6 @@
   height: 25px;
   font-size: 0;
   background-color: $dark-blue;
-  opacity: 0.6;
   cursor: pointer;
   border: none;
   outline: none;
@@ -82,8 +81,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 19px;
-    left: 7px;
+    top: 12px;
+    left: 30px;
     width: 30px;
     height: 4px;
 
@@ -138,7 +137,7 @@
   .main-menu__item {
     border-bottom: 0;
     background-color: #1d2631;
-    padding: 38px 40px;
+    padding: 29px 40px;
   }
   .main-menu__item-title {
     font-family: "OpenSansRegular";

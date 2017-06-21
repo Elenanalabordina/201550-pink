@@ -36,7 +36,7 @@
   .wrapper__title {
     font-size: 50px;
     line-height: 59px;
-    padding-top: 221px;
+    padding-top: 136px;
   }
   .wrapper {
     position: relative;
@@ -44,16 +44,16 @@
     background-position: center;
     background-color: $dark-blue;
     margin-top: -150px;
-    height: 479px;
   }
   @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
       .wrapper {
       background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
       background-size: 1202px 723px;
-      background-position-y: 43px;
+      background-position-y: -44px;
       background-position-x: center;
       background-color:  $dark-blue;
+      height: 392px;
     }
   }
   .wrapper--form {
@@ -74,7 +74,6 @@
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
     background-position: center;
     background-color: $dark-blue;
-    height: 432px;
   }
   @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
@@ -84,6 +83,8 @@
       background-position-y: 49px;
       background-position-x: center;
       background-color:  $dark-blue;
+      margin-top: -150px;
+      height: 432px;
     }
   }
 }
