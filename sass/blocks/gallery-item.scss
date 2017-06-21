@@ -169,6 +169,7 @@
   }
   .gallery-item {
     margin-bottom: 52px;
+    width: 300px;
   }
   .gallery-item:nth-child(2n) {
     margin-right: 20px;
@@ -181,5 +182,6 @@
   }
   .gallery-item--panorama {
     margin-bottom: 33px;
+    width: auto;
   }
 }
