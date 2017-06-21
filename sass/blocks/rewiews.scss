@@ -13,12 +13,12 @@
   text-align: center;
 
   &::before {
-   content: open-quote;
- }
+    content: open-quote;
+  }
 
- &::after {
-   content: close-quote;
- }
+  &::after {
+    content: close-quote;
+  }
 }
 .rewiews__wrapper {
   @include container;
