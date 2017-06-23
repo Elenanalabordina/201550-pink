@@ -1,9 +1,11 @@
 .contacts-table__name {
-  font-family: "OpenSansBold";
+  @include font-family;
+  font-weight: 700;
   font-size: 18px;
 }
 .contacts-table__value {
-  font-family: "OpenSansLight";
+  @include font-family;
+  font-weight: 300;
   font-size: 24px;
   color: $pink;
 }

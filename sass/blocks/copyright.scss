@@ -14,7 +14,8 @@
   }
 }
 .copyright__title-text {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   font-size: 14px;
   color: $gray-text;
   padding-right: 16px;

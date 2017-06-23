@@ -2,7 +2,8 @@
   margin-bottom: 16px;
 }
 .form-phone__label {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   color: $pink;
   font-size: 14px;
   text-transform: uppercase;

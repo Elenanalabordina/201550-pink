@@ -1,8 +1,10 @@
 .gallery-item {
   @include container;
   background-color: $gray;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   padding-bottom: 18px;
+  display: flex;
+  flex-direction: column;
 }
 .gallery-item__photo img {
   width: 100%;
@@ -11,7 +13,6 @@
       filter: contrast(150%);
   }
 }
-
 .gallery-item--panorama {
   margin: 0;
   width: 100%;
@@ -20,46 +21,51 @@
   padding-bottom: 0;
 }
 .gallery-item__name {
-  font-family: "OpenSansBold";
+  @include font-family;
+  font-weight: 700;
   font-size: 14px;
   display: inline-block;
+  vertical-align: bottom;
   padding-left: 18px;
   margin-bottom: 0;
   padding-top: 6px;
 }
 .gallery-item__time {
-  font-family: "OpenSansLight";
+  @include font-family;
+  font-weight: 300;
   font-size: 12px;
   text-transform: uppercase;
 }
 .gallery-item__comment {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   padding-left: 18px;
   margin-top: -6px;
   line-height: 25px;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 .gallery-item__like {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
   color: $pink;
-  padding-left: 50px;
   position: relative;
 }
 .gallery-item__likes {
-  position: relative;
+  display: flex;
+  align-items: baseline;
+  margin-left: 18px;
 }
 .gallery-item__icon {
-  position: absolute;
   background: url(../img/icon-heart.svg);
   width: 13px;
   height: 12px;
-  top: 8px;
-  left: 18px;
+  margin-right: 18px;
 }
 .gallery-item__inscription {
-  font-family: "OpenSansBold";
+  @include font-family;
+  font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
   color: $white;
@@ -81,17 +87,12 @@
 }
 
 @media ($tablet-width) {
-  .gallery-item__container {
-    @include container;
-    display: flex;
-    flex-wrap: wrap;
-  }
   .gallery-item {
     width: 300px;
     margin-left: 0;
     margin-right: 20px;
     margin-bottom: 20px;
-    padding-bottom: 19px;
+    padding-bottom: 16px;
   }
   .gallery-item:nth-child(2n) {
     margin-right: 0;
@@ -116,7 +117,7 @@
     margin: 0;
     width: auto;
     margin-right: 0;
-    margin-bottom: 29px;
+    margin-bottom: 33px;
   }
   .gallery-item__inscription {
     right: 40px;
@@ -138,23 +139,26 @@
   }
   .gallery-item__likes {
     padding-top: 8px;
+    margin-left: 28px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
   .gallery-item__like {
-    padding-left: 29px;
+    padding-left: 0;
   }
   .gallery-item__likes--panorama {
     position: absolute;
-    top: 19px;
+    top: 14px;
     right: 58px;
 
     .gallery-item__icon {
-      left: 133px;
-      top: 17px;
+      position: absolute;
+      left: 106px;
+      top: 16px;
     }
   }
   .gallery-item__icon {
-    left: 256px;
-    top: 17px;
+    margin-right: 31px;
   }
   .gallery-item__wrapper {
     padding-bottom: 19px;

@@ -20,7 +20,8 @@
   height: 707px;
 }
 .advantages__text {
-  font-family: "OpenSansLight";
+  @include font-family;
+  font-weight: 300;
   font-size: 24px;
   display: block;
   text-align: center;
@@ -36,13 +37,15 @@
   margin-bottom: 27px;
 }
 .advantages__item-title {
-  font-family: "OpenSansBold";
+  @include font-family;
+  font-weight: 700;
   font-size: 18px;
   color: $black;
   margin-bottom: 6px;
 }
 .advantages__item-text {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   font-size: 14px;
   margin: 0;
   line-height: 25px;

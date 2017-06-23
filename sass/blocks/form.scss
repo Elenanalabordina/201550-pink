@@ -1,5 +1,6 @@
 .form__title {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   color: $pink;
   font-size: 14px;
   line-height: 19px;
@@ -59,7 +60,8 @@
   }
 }
 .form__info {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 }
@@ -88,7 +90,8 @@
   }
 }
 ::placeholder {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   color: black;
 }
 .form__words {
@@ -181,11 +184,6 @@
   }
   .form-info__input-field--name {
     width: 376px;
-  }
-  .form__group--phone {
-  }
-  .form__words {
-    display: inline-block;
   }
   .form__btn {
     margin-bottom: 0;

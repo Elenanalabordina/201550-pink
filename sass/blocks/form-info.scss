@@ -1,5 +1,6 @@
 .form-info__label {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   color: $pink;
   font-size: 14px;
   text-transform: uppercase;
@@ -8,7 +9,8 @@
   padding-bottom: 6px;
 }
 .form-info__input-field {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   font-size: 18px;
   opacity: 1;
   width: 100%;

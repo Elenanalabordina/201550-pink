@@ -6,7 +6,8 @@
 }
 
 .modal__title {
-  font-family: "OpenSansBold";
+  @include font-family;
+  font-weight: 700;
   text-align: center;
   font-size: 18px;
   line-height: 24px;
@@ -15,7 +16,8 @@
 }
 
 .modal__text {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   text-align: center;
   font-size: 14px;
   line-height: 24px;

@@ -2,14 +2,16 @@
   margin-bottom: 67px;
 }
 .rewiews__name {
-  font-family: "OpenSansBold";
+  @include font-family;
+  font-weight: 700;
   font-size: 18px;
   color: $black;
   text-align: center;
   display: block;
 }
 .rewiews__block {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   text-align: center;
 
   &::before {

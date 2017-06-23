@@ -52,7 +52,7 @@
   padding-left: 7px;
 }
 
-.prices__table-item--hit {
+.prices__table-header-item--hit {
   position: relative;
   &::after {
     content: "";
@@ -79,14 +79,16 @@
 .prices__table-header-item-title {
   color: $white;
   text-transform: uppercase;
-  font-family: "OpenSansBold";
+  @include font-family;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
 
 .prices__table-header-item-text {
   color: $white;
-  font-family: "OpenSansLight";
+  @include font-family;
+  font-weight: 300;
   font-size: 24px;
   margin: 0;
 }
@@ -153,6 +155,7 @@
   .prices__table-header-item .prices__table-header-item--empty {
     display: inline-block;
     background: transparent;
+    vertical-align: top;
   }
   .prices__table-header-item {
     padding: 0;
@@ -220,7 +223,7 @@
   .prices__table-header-item-text {
     font-size: 18px;
   }
-  .prices__table-item--hit {
+  .prices__table-header-item--hit {
 
     &::after {
       width: 58px;
@@ -288,7 +291,7 @@
   .prices__table-header-item-title {
     font-size: 18px;
   }
-  .prices__table-item--hit {
+  .prices__table-header-item--hit {
 
     &::after {
       width: 70px;

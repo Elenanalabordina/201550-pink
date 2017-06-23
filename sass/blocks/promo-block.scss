@@ -33,7 +33,8 @@
   font-size: 0;
 }
 .promo-block__text {
-  font-family: "OpenSansLight";
+  @include font-family;
+  font-weight: 300;
   color: $white;
   text-align: center;
   line-height: 25px;
@@ -99,7 +100,8 @@
   }
   .promo-block__tagline {
     display: block;
-    font-family: "OpenSansLight";
+    @include font-family;
+    font-weight: 300;
     font-size: 40px;
     color: $white;
     width: 190px;

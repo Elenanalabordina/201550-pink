@@ -1,5 +1,6 @@
 .form-achievements__label {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   font-size: 18px;
   position: relative;
   display: block;

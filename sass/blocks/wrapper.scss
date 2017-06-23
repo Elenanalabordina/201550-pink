@@ -1,7 +1,7 @@
 .wrapper__title {
-  font-family: "OpenSansLight";
+  @include font-family;
+  font-weight: 300;
   font-size: 24px;
-  font-weight: normal;
   color: $white;
   text-align: center;
   @include container;

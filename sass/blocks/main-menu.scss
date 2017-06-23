@@ -21,7 +21,8 @@
   border-top: 1px solid $blue;
 }
 .main-menu__item-title {
-  font-family: "OpenSansBold";
+  @include font-family;
+  font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
   color: $white;
@@ -109,6 +110,13 @@
   .main-menu--nojs .main-menu__toggle {
     display: none;
   }
+  .main-menu--nojs .main-menu__wrapper {
+    position: static;
+    height: auto;
+  }
+  .main-menu--nojs .main-menu__item {
+    display: block;
+  }
 }
 @media ($tablet-width) {
   .main-menu {
@@ -140,7 +148,8 @@
     padding: 29px 40px;
   }
   .main-menu__item-title {
-    font-family: "OpenSansRegular";
+    @include font-family;
+    font-weight: 400;
     text-transform: none;
   }
 }

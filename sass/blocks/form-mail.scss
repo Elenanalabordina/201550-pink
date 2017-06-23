@@ -1,5 +1,6 @@
 .form-mail__label {
-  font-family: "OpenSansRegular";
+  @include font-family;
+  font-weight: 400;
   color: $pink;
   font-size: 14px;
   text-transform: uppercase;
@@ -8,8 +9,9 @@
   padding-bottom: 5px;
 }
 .form-mail__input-field {
+  @include font-family;
   font-size: 18px;
-  font-family: "OpenSansRegular";
+  font-weight: 400;
   opacity: 1;
   width: 100%;
   height: 63px;
