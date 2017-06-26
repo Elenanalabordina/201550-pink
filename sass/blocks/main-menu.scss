@@ -40,7 +40,7 @@
 }
 .main-menu__toggle {
   position: absolute;
-  top: -48px;
+  top: -108px;
   right: 20px;
   z-index: 45;
   display: block;
@@ -55,7 +55,7 @@
 .main-menu--closed .main-menu__toggle::before {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 61px;
   left: 0;
 
   width: 50px;
@@ -82,8 +82,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 12px;
-    left: 30px;
+    top: 71px;
+    left: 28px;
     width: 30px;
     height: 4px;
 
@@ -124,7 +124,7 @@
     margin: 0 ;
   }
   .main-menu__toggle {
-    top: -68px;
+    top: -136px;
   }
   .main-menu--opened .main-menu__wrapper {
     position: relative;
